@@ -29,6 +29,7 @@ const firebaseConfig = {
     const lastName = document.getElementById('lastName').value;
     const phone = document.getElementById('phone').value;
     const email = document.getElementById('email').value;
+    const timestamp = new Date().toISOString();
   
     // Create an object to store the data
     const contactData = {
@@ -36,6 +37,7 @@ const firebaseConfig = {
       lastName: lastName,
       phone: phone,
       email: email,
+      timestamp: timestamp
     };
   
     // Send the data to Firebase Realtime Database
